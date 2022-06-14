@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    stages {
+        stage ("compilation") {
+            steps {
+                sh "echo hello dear. this compilation"
+            }
+        }
+        
+        stage ("deployment") {
+            steps {
+                sh "echo hello dear. this is deployment"
+            }
+        }
+          stage ("finalize") {
+            steps {
+                sh "echo hello dear. this is finalize"
+            }
+        }
+    }
+}
